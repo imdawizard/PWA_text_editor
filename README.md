@@ -1,4 +1,4 @@
 # PWA_text_editor
 
 
-[Nate Kester](@imdawizard)
+[Nate Kester](https://github.com/imdawizard)
