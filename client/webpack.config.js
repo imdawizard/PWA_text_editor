@@ -23,11 +23,11 @@ module.exports = () => {
         filename: 'index.html',
         chunks: ['main'],
       }),
-      new HtmlWebpackPlugin({
-        template: './src/js/install.js',
-        filename: 'install.js',
-        chunks: ['install'],
-      }),
+      // new HtmlWebpackPlugin({
+      //   template: './src/js/install.js',
+      //   filename: 'install.js',
+      //   chunks: ['install'],
+      // }),
       new WebpackPwaManifest({
         name: 'Jate editor',
         short_name: 'JATE',
@@ -43,7 +43,7 @@ module.exports = () => {
       }),
       new InjectManifest({
         swSrc: './src-sw.js', // Path to service worker file
-        swDest: 'sw.js', // Output file for service worker
+        swDest: 'src-sw.js', // Output file for service worker
       }),
     ],
 
